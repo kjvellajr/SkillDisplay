@@ -82,7 +82,7 @@ export default function Action({ actionId, additionalClasses }) {
 		}
 	}, [actionId])
 
-	if (apiData === undefined || !apiData.Icon) {
+	if (apiData === undefined || !apiData.Icon || actionId == 7) {
 		return null
 	}
 
